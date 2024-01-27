@@ -1,0 +1,32 @@
+<div>
+    <div class="row">
+
+        {{#each vidu1}}
+
+            <div class="col-sm-4 con-lg-4">
+                <div class="card card-vd1">
+                    <a href="/cac-xa/{{this.slug}}">
+                        <img
+                            style="height: 400px; width: 100% "
+                            class="card-img-top"
+                            src="{{this.img}}"
+                            class="card-img-top"
+                            alt="{{this.name}}"
+                        />
+                    </a>
+
+                    <div class="card-body">
+                        <a href="/cac-xa/{{this.slug}}">
+                            <h5 class="card-title">{{this.name}}</h5>
+                        </a>
+
+                        <p class="card-text">{{this.descripton}}</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+
+    </div>
+</div>
